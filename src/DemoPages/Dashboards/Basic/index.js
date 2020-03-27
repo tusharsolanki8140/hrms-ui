@@ -36,10 +36,7 @@ import {
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
-import avatar1 from '../../../assets/utils/images/avatars/1.jpg';
-import avatar2 from '../../../assets/utils/images/avatars/2.jpg';
-import avatar3 from '../../../assets/utils/images/avatars/3.jpg';
-import avatar4 from '../../../assets/utils/images/avatars/4.jpg';
+import avatar from '../../../assets/utils/images/avatars/avatar.jpg';
 
 
 const data = [
@@ -681,7 +678,7 @@ export default class AnalyticsDashboard1 extends Component {
                                                         <div className="widget-content-wrapper">
                                                             <div className="widget-content-left mr-3">
                                                                 <div className="widget-content-left">
-                                                                    <img width={40} className="rounded-circle" src={avatar4} alt="Avatar" />
+                                                                    <img width={40} className="rounded-circle" src={avatar} alt="Avatar" />
                                                                 </div>
                                                             </div>
                                                             <div className="widget-content-left flex2">
@@ -706,7 +703,7 @@ export default class AnalyticsDashboard1 extends Component {
                                                         <div className="widget-content-wrapper">
                                                             <div className="widget-content-left mr-3">
                                                                 <div className="widget-content-left">
-                                                                    <img width={40} className="rounded-circle" src={avatar3} alt="Avatar" />
+                                                                    <img width={40} className="rounded-circle" src={avatar} alt="Avatar" />
                                                                 </div>
                                                             </div>
                                                             <div className="widget-content-left flex2">
@@ -731,7 +728,7 @@ export default class AnalyticsDashboard1 extends Component {
                                                         <div className="widget-content-wrapper">
                                                             <div className="widget-content-left mr-3">
                                                                 <div className="widget-content-left">
-                                                                    <img width={40} className="rounded-circle" src={avatar2} alt="Avatar" />
+                                                                    <img width={40} className="rounded-circle" src={avatar} alt="Avatar" />
                                                                 </div>
                                                             </div>
                                                             <div className="widget-content-left flex2">
@@ -756,7 +753,7 @@ export default class AnalyticsDashboard1 extends Component {
                                                         <div className="widget-content-wrapper">
                                                             <div className="widget-content-left mr-3">
                                                                 <div className="widget-content-left">
-                                                                    <img width={40} className="rounded-circle" src={avatar1} alt="Avatar" /></div>
+                                                                    <img width={40} className="rounded-circle" src={avatar} alt="Avatar" /></div>
                                                             </div>
                                                             <div className="widget-content-left flex2">
                                                                 <div className="widget-heading">Vinnie Wagstaff</div>

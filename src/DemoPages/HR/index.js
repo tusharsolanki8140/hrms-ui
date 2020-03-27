@@ -6,6 +6,7 @@ import Employees from "./Employees";
 import AppHeader from "../../Layout/AppHeader/";
 import AppSidebar from "../../Layout/AppSidebar/";
 import AppFooter from "../../Layout/AppFooter/";
+import Organizations from './Organizations';
 
 const HR = ({match}) => (
     <Fragment>
@@ -15,6 +16,7 @@ const HR = ({match}) => (
             <div className="app-main__outer">
                 <div className="app-main__inner">
                     <Route path={`${match.url}/employees`} component={Employees}/>
+                    <Route path={`${match.url}/organizations`} component={Organizations}/>
                 </div>
                 <AppFooter/>
             </div>

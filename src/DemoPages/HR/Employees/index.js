@@ -2,10 +2,7 @@ import React,{ Component } from "react";
 import { Fragment } from "react";
 import { Row, Col } from "react-bootstrap";
 import { Card } from "reactstrap";
-import avatar1 from '../../../assets/utils/images/avatars/1.jpg';
-import avatar2 from '../../../assets/utils/images/avatars/2.jpg';
-import avatar3 from '../../../assets/utils/images/avatars/3.jpg';
-import avatar4 from '../../../assets/utils/images/avatars/4.jpg';
+import avatar from '../../../assets/utils/images/avatars/avatar.jpg';
 
 export default class Employees extends Component {
 
@@ -47,7 +44,7 @@ export default class Employees extends Component {
                                                 <div className="widget-content-wrapper">
                                                     <div className="widget-content-left mr-3">
                                                         <div className="widget-content-left">
-                                                            <img width={40} className="rounded-circle" src={avatar4} alt="Avatar" />
+                                                            <img width={40} className="rounded-circle" src={avatar} alt="Avatar" />
                                                         </div>
                                                     </div>
                                                     <div className="widget-content-left flex2">
@@ -72,7 +69,7 @@ export default class Employees extends Component {
                                                 <div className="widget-content-wrapper">
                                                     <div className="widget-content-left mr-3">
                                                         <div className="widget-content-left">
-                                                            <img width={40} className="rounded-circle" src={avatar3} alt="Avatar" />
+                                                            <img width={40} className="rounded-circle" src={avatar} alt="Avatar" />
                                                         </div>
                                                     </div>
                                                     <div className="widget-content-left flex2">
@@ -97,7 +94,7 @@ export default class Employees extends Component {
                                                 <div className="widget-content-wrapper">
                                                     <div className="widget-content-left mr-3">
                                                         <div className="widget-content-left">
-                                                            <img width={40} className="rounded-circle" src={avatar2} alt="Avatar" />
+                                                            <img width={40} className="rounded-circle" src={avatar} alt="Avatar" />
                                                         </div>
                                                     </div>
                                                     <div className="widget-content-left flex2">
@@ -122,7 +119,7 @@ export default class Employees extends Component {
                                                 <div className="widget-content-wrapper">
                                                     <div className="widget-content-left mr-3">
                                                         <div className="widget-content-left">
-                                                            <img width={40} className="rounded-circle" src={avatar1} alt="Avatar" /></div>
+                                                            <img width={40} className="rounded-circle" src={avatar} alt="Avatar" /></div>
                                                     </div>
                                                     <div className="widget-content-left flex2">
                                                         <div className="widget-heading">Vinnie Wagstaff</div>
