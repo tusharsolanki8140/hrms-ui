@@ -9,6 +9,10 @@ Install the latest version of npm. This will be useful when running all the buil
     npm install --global npm@latest
                                                             
                                                         
+Start corsproxy server to handle CROS resquests 
+
+    corsproxy
+
 Install the app dependencies by running the following command in the command line inside the folder root where you have unzipped the theme package archive.
 
 
