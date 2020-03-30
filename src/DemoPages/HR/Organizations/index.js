@@ -6,6 +6,42 @@ import { Card } from "reactstrap";
 export default class Organizations extends Component {
     constructor(){
         super();
+        this.state = {
+            organizations: [],
+        }
+    }
+
+    componentDidMount() {
+        fetch("http://localhost:1337/localhost:8020/hrms/api/organizations")
+        .then(results=> {
+            return results.json();
+        }).then(data => {
+            console.log(data);
+            let orgs = data.map((org,index) => {
+                return(
+                    <tr key={index}>
+                        <td className="text-center text-muted">{index + 1}</td>
+                        <td>
+                            <div className="widget-content p-0">
+                                <div className="widget-content-wrapper">
+                                    <div className="widget-content-left flex2">
+                                        <div className="widget-heading">{org.name}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td className="text-center">
+                            <div className={org.isActive ? 'badge  badge-success' : 'badge badge-warning'}>{org.isActive ? 'Active' : 'Inactive'}</div>
+                        </td>
+                        <td className="text-center">
+                            <div>{org.createdAt}</div>
+                        </td>
+                    </tr>
+                )
+            })
+            this.setState({organizations : orgs});
+            console.log("state = "+ this.state.organizations);
+        })
     }
     render() {
 
@@ -17,9 +53,7 @@ export default class Organizations extends Component {
                             <div className="card-header">Active Organizations
                                 <div className="btn-actions-pane-right">
                                     <div role="group" className="btn-group-sm btn-group">
-                                        <button className="active btn btn-info">All</button>
-                                        <button className="btn btn-info">Active</button>
-                                        <button className="btn btn-info">Inactive</button>
+                                        <button className="active btn btn-info">Add Organization</button>
                                     </div>
                                 </div>
                             </div>
@@ -34,24 +68,7 @@ export default class Organizations extends Component {
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <tr>
-                                        <td className="text-center text-muted">1</td>
-                                        <td>
-                                            <div className="widget-content p-0">
-                                                <div className="widget-content-wrapper">
-                                                    <div className="widget-content-left flex2">
-                                                        <div className="widget-heading">Webshar Pvt ltd</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td className="text-center">
-                                            <div className="badge badge-success">Healthy</div>
-                                        </td>
-                                        <td className="text-center">
-                                            <div>2020-03-25 16:12:38.63</div>
-                                        </td>
-                                    </tr>
+                                        {this.state.organizations}
                                     </tbody>
                                 </table>
                             </div>

@@ -1,12 +1,7 @@
-#### ArchitectUI Bootstrap 4 ReactJS Theme FREE
-#### Made with love by DashboardPack.com
+RUN HRMS backend project on lcoal 
+For backend project get this repo downloaded on local 
 
-## PRO Version Available at - https://dashboardpack.com/theme-details/architectui-dashboard-react-pro
-
-### Installation
-Download and uncompress the theme package archive in your desired folder location.
-
-Download and install Node.js from nodejs.org/en/download/
+https://github.com/vikramwable/webshar-hrms (develop is the latest branch)
 
 Install the latest version of npm. This will be useful when running all the build commands. Run the following in a command line, either your IDE's Terminal window or in a Windows Command Prompt.
 
@@ -14,6 +9,10 @@ Install the latest version of npm. This will be useful when running all the buil
     npm install --global npm@latest
                                                             
                                                         
+Start corsproxy server to handle CROS resquests 
+
+    corsproxy
+
 Install the app dependencies by running the following command in the command line inside the folder root where you have unzipped the theme package archive.
 
 
