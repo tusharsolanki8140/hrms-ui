@@ -11713,6 +11713,10 @@ body {
 .after-img {
   max-width: 100%; }
 
+.employees-body {
+  height: 700px;
+  overflow: auto; }
+
 @media only screen and (max-width: 1320px) {
   .header-user-info {
     display: none; } }
