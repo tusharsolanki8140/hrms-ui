@@ -3,6 +3,7 @@ import { Fragment } from "react";
 import { Row, Col } from "react-bootstrap";
 import { Card, CardHeader, CardBody } from "reactstrap";
 import InfiniteScroll from 'react-infinite-scroller';
+import Avatar from 'react-avatar';
 
 const baseApiUrl = "http://localhost:1337/localhost:8020/hrms/api";
 
@@ -113,7 +114,10 @@ export default class Employees extends Component {
                         <CardHeader>
                             <div className="widget-content-left">
                                 <div className="widget-content-left mr-3">
-                                    <img width={40} className="rounded-circle" src="/static/media/avatar.7244d950.jpg" alt="Avatar" /></div>
+                                    {/* We will do changes to load actual profile pictures once our API support this. */}
+                                    {/* <img width={40} className="rounded-circle" src="/static/media/avatar.7244d950.jpg" alt="Avatar" /> */}
+                                    <Avatar name={employee.firstName + " " + employee.lastName} size={40} round={true}/>
+                                </div>
                             </div>
                             <div className="widget-content-left flex2">
                                 <div className="widget-heading">{employee.firstName + " " + employee.lastName}</div>
