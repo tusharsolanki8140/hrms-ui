@@ -106,11 +106,6 @@ export default class AnalyticsDashboard1 extends Component {
                     transitionEnter={false}
                     transitionLeave={false}>
                     <div>
-                        <PageTitle
-                            heading="Basic Dashboard"
-                            subheading="This is an example dashboard created using build-in elements and components."
-                            icon="pe-7s-car icon-gradient bg-mean-fruit"
-                        />
                         <Row>
                             <Col md="12" lg="6">
                                 <Card className="mb-3">

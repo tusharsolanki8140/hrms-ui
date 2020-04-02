@@ -109,7 +109,7 @@ export default class Employees extends Component {
         var items = [];
         this.state.employees.map((employee, i) => {
             items.push(
-                <Col md={3} className="p-3" key={i}>
+                <Col md={4} className="p-3" key={i}>
                     <Card className="main-card widget-content">
                         <CardHeader>
                             <div className="widget-content-left">
@@ -161,8 +161,7 @@ export default class Employees extends Component {
                                         </select>
                                     </Col>
                                     <Col sm={2} role="group" className="btn-group-sm btn-group">
-                                        <button className="active btn btn-info">Add New</button>
-                                        <button className="btn btn-info">Upload</button>
+                                        <button className="active btn btn-info">Add New Employee</button>
                                     </Col>
                                 </Row>
                             </CardHeader>

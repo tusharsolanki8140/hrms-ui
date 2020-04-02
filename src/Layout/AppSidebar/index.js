@@ -22,10 +22,7 @@ class AppSidebar extends Component {
 
     render() {
         let {
-            backgroundColor,
-            enableBackgroundImage,
             enableSidebarShadow,
-            backgroundImage,
             backgroundImageOpacity,
         } = this.props;
 
@@ -34,7 +31,7 @@ class AppSidebar extends Component {
                 <div className="sidebar-mobile-overlay" onClick={this.toggleMobileSidebar}/>
                 <ReactCSSTransitionGroup
                     component="div"
-                    className={cx("app-sidebar", backgroundColor, {'sidebar-shadow': enableSidebarShadow})}
+                    className={cx("app-sidebar", {'sidebar-shadow': enableSidebarShadow})}
                     transitionName="SidebarAnimation"
                     transitionAppear={true}
                     transitionAppearTimeout={1500}
@@ -47,10 +44,7 @@ class AppSidebar extends Component {
                         </div>
                     </PerfectScrollbar>
                     <div
-                        className={cx("app-sidebar-bg", backgroundImageOpacity)}
-                        style={{
-                            backgroundImage: enableBackgroundImage ? 'url(' + backgroundImage + ')' : null
-                        }}>
+                        className={cx("app-sidebar-bg", backgroundImageOpacity)}>
                     </div>
                 </ReactCSSTransitionGroup>
             </Fragment>

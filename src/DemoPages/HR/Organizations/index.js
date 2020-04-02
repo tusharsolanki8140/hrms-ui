@@ -50,7 +50,7 @@ export default class Organizations extends Component {
                 <Row>
                     <Col md={12}>
                         <Card className="main-card mb-3">
-                            <div className="card-header">Active Organizations
+                            <div className="card-header">Organizations
                                 <div className="btn-actions-pane-right">
                                     <div role="group" className="btn-group-sm btn-group">
                                         <button className="active btn btn-info">Add Organization</button>
